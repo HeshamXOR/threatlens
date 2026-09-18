@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "threatlens"
+version = "0.1.0"
+description = "Detect malicious URLs and Windows executables with calibrated ML models."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Hesham Ahmed Wageeh Elsayed" }]
+keywords = [
+    "malware", "security", "url", "phishing", "detection",
+    "machine-learning", "pe", "ember", "cybersecurity",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# URL detection is the default install — light dependencies.
+dependencies = [
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "xgboost>=2.0",
+    "lightgbm>=4.0",
+    "joblib>=1.3",
+    "tldextract>=3.4",
+]
+
+[project.optional-dependencies]
+# PE/executable detection additionally needs a binary parser.
+files = ["lief>=0.14"]
+# Everything, plus the test tooling.
+dev = ["lief>=0.14", "pytest>=7.4"]
+
+[project.urls]
+Homepage = "https://github.com/HeshamXOR/threatlens"
+Repository = "https://github.com/HeshamXOR/threatlens"
+Issues = "https://github.com/HeshamXOR/threatlens/issues"
+
+[project.scripts]
+threatlens = "threatlens.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# Bundle the trained model artifacts inside the wheel.
+threatlens = ["models/url/*.joblib", "models/pe/*.joblib"]

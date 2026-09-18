@@ -1,0 +1,31 @@
+threatlens
+Copyright 2026 Hesham Ahmed Wageeh Elsayed
+
+This product includes software developed for the MalwareGuard project.
+
+Licensed under the Apache License, Version 2.0. See the LICENSE file.
+
+-------------------------------------------------------------------------------
+Third-party components
+-------------------------------------------------------------------------------
+
+PE / EMBER feature extraction (src/threatlens/files/ember_features.py) is ported
+and adapted from the EMBER project by Elastic:
+
+    https://github.com/elastic/ember
+    Copyright (c) 2018 Endgame, Inc.
+    Licensed under the MIT License.
+
+The EMBER 2018 v2 feature format and the reference implementation it is derived
+from are the work of that project; this port updates it for Python 3.12+ and
+LIEF >= 0.15.
+
+-------------------------------------------------------------------------------
+Model training data
+-------------------------------------------------------------------------------
+
+The bundled URL model was trained on a corpus that incorporates benign URLs
+drawn from the Majestic Million list. The bundled PE model was trained on the
+EMBER 2018 v2 dataset. The distributed model weights are derived artifacts and
+are released under this project's Apache-2.0 license; the underlying datasets
+remain subject to their respective terms.
