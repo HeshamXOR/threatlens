@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="threatlens icon">
+  <defs>
+    <linearGradient id="i-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF8F4D"/>
+      <stop offset="55%" stop-color="#FA5F02"/>
+      <stop offset="100%" stop-color="#C83A00"/>
+    </linearGradient>
+    <radialGradient id="i-glass" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#1A1A1D"/>
+      <stop offset="100%" stop-color="#0C0C0D"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="128" height="128" rx="28" fill="#0C0C0D"/>
+
+  <g transform="translate(56 54)">
+    <line x1="26" y1="26" x2="46" y2="46" stroke="url(#i-ring)" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="34" fill="url(#i-glass)" stroke="url(#i-ring)" stroke-width="7"/>
+    <line x1="-34" y1="0" x2="-13" y2="0" stroke="#FA5F02" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <line x1="13" y1="0" x2="34" y2="0" stroke="#FA5F02" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <line x1="0" y1="-34" x2="0" y2="-13" stroke="#FA5F02" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <line x1="0" y1="13" x2="0" y2="34" stroke="#FA5F02" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <rect x="-8" y="-8" width="16" height="16" rx="2.5" transform="rotate(45)" fill="none" stroke="#FF2D55" stroke-width="3"/>
+    <circle cx="0" cy="0" r="2.8" fill="#FF2D55"/>
+  </g>
+</svg>

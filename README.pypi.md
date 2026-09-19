@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="threatlens" width="440">
+  <img src="https://raw.githubusercontent.com/HeshamXOR/threatlens/main/assets/logo.png" alt="threatlens" width="440">
 </p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://pypi.org/project/threatlens-ml/"><img src="https://img.shields.io/pypi/v/threatlens-ml?color=FA5F02&label=pypi" alt="PyPI"></a>
   <a href="https://pypi.org/project/threatlens-ml/"><img src="https://img.shields.io/pypi/pyversions/threatlens-ml?color=FA5F02" alt="Python versions"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-FA5F02" alt="License"></a>
+  <a href="https://github.com/HeshamXOR/threatlens/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-FA5F02" alt="License"></a>
   <img src="https://img.shields.io/badge/models-bundled-30D158" alt="Models bundled">
 </p>
 
@@ -183,4 +183,4 @@ pytest
 Apache-2.0. Extracted from the
 [MalwareGuard](https://github.com/HeshamXOR/MalwareGuard) project. PE feature extraction is
 ported from [elastic/ember](https://github.com/elastic/ember) (MIT). Full attributions in
-[`NOTICE`](NOTICE).
+[`NOTICE`](https://github.com/HeshamXOR/threatlens/blob/main/NOTICE).

@@ -21,3 +21,4 @@ Thumbs.db
 .vscode/
 .venv-test/
 dist/
+.venv-verify/
